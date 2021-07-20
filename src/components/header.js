@@ -1,36 +1,44 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { Link } from "gatsby";
 import React, { useState } from "react";
+
+import { Logo } from "./logo";
+import { GitHub } from "./icons/github";
+import { Telegram } from "./icons/telegram";
+import { Twitter } from "./icons/twitter";
+
+import { Links } from "../constants/links";
+
+const NAV_ITEMS = [
+  {
+    label: `blog`,
+    link: Links.BLOG,
+  },
+  {
+    label: `contact`,
+    link: Links.CONTACT,
+  },
+  {
+    label: <GitHub />,
+    link: Links.GITHUB,
+  },
+  {
+    label: <Telegram />,
+    link: Links.TELEGRAM,
+  },
+  {
+    label: <Twitter />,
+    link: Links.TWITTER,
+  },
+];
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
-  const { site } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
 
   return (
-    <header className="bg-green-700">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
+    <header className="bg-shutter-black">
+      <div className="flex flex-wrap items-center justify-between container p-4 mx-auto md:py-8 md:px-0">
         <Link to="/">
-          <h1 className="flex items-center text-white no-underline">
-            <svg
-              className="w-8 h-8 mr-2 fill-current"
-              height="54"
-              viewBox="0 0 54 54"
-              width="54"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-            </svg>
-            <span className="text-xl font-bold tracking-tight">
-              {site.siteMetadata.title}
-            </span>
-          </h1>
+          <Logo />
         </Link>
 
         <button
@@ -49,26 +57,20 @@ function Header() {
 
         <nav
           className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:items-center w-full md:w-auto`}
+            isExpanded ? `flex flex-col` : `hidden`
+          } md:flex md:items-center w-full md:w-auto`}
         >
-          {[
-            {
-              route: `/about`,
-              title: `About`,
-            },
-            {
-              route: `/contact`,
-              title: `Contact`,
-            },
-          ].map((link) => (
-            <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
-              key={link.title}
-              to={link.route}
+          {NAV_ITEMS.map((item, i) => (
+            <a
+              className="text-3xl block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
+              key={`nav-item-${i}`}
+              href={item.link}
+              rel="noreferrer"
+              target="_blank"
+              alt={item.label}
             >
-              {link.title}
-            </Link>
+              {item.label}
+            </a>
           ))}
         </nav>
       </div>
