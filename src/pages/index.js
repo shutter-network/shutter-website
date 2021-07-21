@@ -5,6 +5,8 @@ import SEO from "../components/seo";
 import { Hero } from "../components/hero";
 import { About } from "../components/about";
 import { ContactUs } from "../components/contact-us";
+import { WhatIsMEV } from "../components/what-is-mev";
+import { HowItWorks } from "../components/how-it-works";
 
 function IndexPage() {
   return (
@@ -16,6 +18,8 @@ function IndexPage() {
       <Hero />
       <About />
       <ContactUs />
+      <WhatIsMEV />
+      <HowItWorks />
     </Layout>
   );
 }
