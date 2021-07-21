@@ -4,4 +4,6 @@ export const Links = {
   GITHUB: "",
   TELEGRAM: "",
   TWITTER: "",
+  IMPRINT: "",
+  PRIVACY_POLICY: "",
 };
