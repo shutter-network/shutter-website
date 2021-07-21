@@ -7,12 +7,13 @@ import { About } from "../components/about";
 import { ContactUs } from "../components/contact-us";
 import { WhatIsMEV } from "../components/what-is-mev";
 import { HowItWorks } from "../components/how-it-works";
+import { FollowTwitter } from "../components/follow-twitter";
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={["shutter", "network", "mev", "ethereum", "dkg"]}
         title="Home"
       />
       <Hero />
@@ -20,6 +21,7 @@ function IndexPage() {
       <ContactUs />
       <WhatIsMEV />
       <HowItWorks />
+      <FollowTwitter />
     </Layout>
   );
 }
