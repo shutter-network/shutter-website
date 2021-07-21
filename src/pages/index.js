@@ -8,6 +8,7 @@ import { ContactUs } from "../components/contact-us";
 import { WhatIsMEV } from "../components/what-is-mev";
 import { HowItWorks } from "../components/how-it-works";
 import { FollowTwitter } from "../components/follow-twitter";
+import { StayInTouch } from "../components/stay-in-touch";
 
 function IndexPage() {
   return (
@@ -22,6 +23,7 @@ function IndexPage() {
       <WhatIsMEV />
       <HowItWorks />
       <FollowTwitter />
+      <StayInTouch />
     </Layout>
   );
 }
