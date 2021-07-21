@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="bg-shutter-black min-w-full">
       <div className="text-white mx-auto container">
-        <h1 className="text-8xl pt-24 pb-20 leading-tight">
+        <h1 className="text-6xl px-4 pt-24 pb-20 leading-tight md:text-8xl lg:px-0">
           Preventing
           <br />
           frontrunning and
@@ -14,7 +14,7 @@ export function Hero() {
           on Ethereum
         </h1>
       </div>
-      <div className="absolute right-0 top-0 mt-28">
+      <div className="absolute right-0 top-0 mt-28 opacity-50 lg:opacity-100">
         <svg
           width="700"
           height="714"

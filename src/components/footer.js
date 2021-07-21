@@ -32,16 +32,16 @@ const NAV_ITEMS = [
 export function Footer() {
   return (
     <footer className="bg-shutter-black">
-      <nav className="flex flex-col md:flex-row justify-between mb-52 container mx-auto">
+      <nav className="flex flex-col md:flex-row items-center justify-between mb-52 container mx-auto px-4 lg:px-0">
         <div className="uppercase text-xl text-white">Shutter Network 2021</div>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center">
           {NAV_ITEMS.map((item, i) => (
             <a
               key={`footer-nav-item-${i}`}
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-xl ml-8"
+              className="text-white text-xl md:ml-8 mt-4 md:mt-0"
             >
               {item.label}
             </a>

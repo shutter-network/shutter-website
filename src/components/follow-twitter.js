@@ -5,7 +5,7 @@ import { Button } from "./button";
 export function FollowTwitter() {
   return (
     <section className="h-96 flex flex-col justify-center bg-shutter-black">
-      <div className="container mx-auto z-10">
+      <div className="container mx-auto z-10 px-4 lg:px-0">
         <Button
           label="Follow us on twitter"
           buttonType="white"

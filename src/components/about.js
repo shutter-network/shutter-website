@@ -4,24 +4,24 @@ import { Button } from "./button";
 
 export function About() {
   return (
-    <section className="text-shutter-black container mx-auto py-52">
-      <p className="text-5xl leading-tight">
+    <section className="text-shutter-black container mx-auto py-52 px-4 lg:px-0">
+      <p className="text-3xl md:text-5xl leading-tight">
         Shutter Network is an open-source project that aims to prevent
         frontrunning on Ethereum by using a threshold cryptography-based
         distributed key generation (DKG) protocol.
       </p>
-      <div className="flex flex-row justify-between mt-6">
+      <div className="flex flex-col md:flex-row justify-between mt-6">
         <Button
           label="Try Shutter"
           href=""
           buttonType="black"
-          className="mr-4"
+          className="mb-4 md:mb-0 md:mr-4"
         />
         <Button
           label="Shutter on GitHub"
           href=""
           buttonType="outlined"
-          className="ml-4"
+          className="md:ml-4"
         />
       </div>
     </section>

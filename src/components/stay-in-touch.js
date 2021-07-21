@@ -5,9 +5,11 @@ import { Button } from "./button";
 export function StayInTouch() {
   return (
     <section className="bg-shutter-black py-28">
-      <div className="container mx-auto flex flex-row justify-between items-center">
-        <div className="flex flex-row">
-          <div className="text-4xl text-white mr-4">stay in touch</div>
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex flex-row items-center">
+          <div className="text-2xl md:text-4xl text-white mr-4">
+            stay in touch
+          </div>
           <svg
             width="48"
             height="48"
@@ -23,13 +25,13 @@ export function StayInTouch() {
         </div>
         <input
           placeholder="your e-mail"
-          className="rounded-full bg-shutter-grey-dark text-white px-8 py-6 flex-1 max-w-xl text-3xl"
+          className="rounded-full bg-shutter-grey-dark text-white px-8 py-6 flex-1 w-full max-w-sm md:max-w-xl text-xl md:text-3xl"
         />
         <Button
           label="subscribe"
           href=""
           buttonType="white"
-          className="max-w-sm"
+          className="mt-4 lg:mt-0 w-full max-w-sm"
         />
       </div>
     </section>

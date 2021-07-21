@@ -5,9 +5,11 @@ import { Button } from "./button";
 export function WhatIsMEV() {
   return (
     <section className="bg-shutter-black">
-      <div className="mx-auto container">
-        <h1 className="text-5xl uppercase text-white mb-14">What Is MEV?</h1>
-        <p className="text-5xl leading-tight text-white">
+      <div className="mx-auto container px-4 lg:px-0">
+        <h1 className="text-3xl md:text-5xl uppercase text-white mb-14">
+          What Is MEV?
+        </h1>
+        <p className="text-3xl md:text-5xl leading-tight text-white">
           Maximally Extractable Value or MEV is the revenue the block producer
           (e.g. validator, miner, sequencer) can extract via frontrunning,
           injecting, reordering or censoring transactions. The MEV extracted in

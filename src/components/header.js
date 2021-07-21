@@ -35,8 +35,8 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-shutter-black">
-      <div className="flex flex-wrap items-center justify-between container p-4 mx-auto md:py-8 md:px-0">
+    <header className="bg-shutter-black z-20">
+      <div className="flex flex-wrap items-center justify-between container p-4 mx-auto md:py-8 lg:px-0">
         <Link to="/">
           <Logo />
         </Link>
