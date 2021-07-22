@@ -5,6 +5,12 @@ module.exports = {
   plugins: [require("@tailwindcss/forms")],
   theme: {
     extend: {
+      fontSize: {
+        "5xl": ["3rem", "1.15"],
+        "6xl": ["3.75rem", "1.15"],
+        "7xl": ["4.5rem", "1.5"],
+        "8xl": ["6rem", "1.15"],
+      },
       colors: {
         "shutter-green": {
           DEFAULT: "#B9E48C",
