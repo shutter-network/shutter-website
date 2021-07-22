@@ -2,9 +2,7 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 
 import { Logo } from "./logo";
-import { GitHub } from "./icons/github";
-import { Telegram } from "./icons/telegram";
-import { Twitter } from "./icons/twitter";
+import { SocialLinks } from "./social-links";
 
 import { Links } from "../constants/links";
 
@@ -16,18 +14,6 @@ const NAV_ITEMS = [
   {
     label: `contact`,
     link: Links.CONTACT,
-  },
-  {
-    label: <GitHub />,
-    link: Links.GITHUB,
-  },
-  {
-    label: <Telegram />,
-    link: Links.TELEGRAM,
-  },
-  {
-    label: <Twitter />,
-    link: Links.TWITTER,
   },
 ];
 
@@ -72,6 +58,7 @@ function Header() {
               {item.label}
             </a>
           ))}
+          <SocialLinks />
         </nav>
       </div>
     </header>

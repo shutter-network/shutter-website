@@ -1,8 +1,6 @@
 import React from "react";
 
-import { GitHub } from "./icons/github";
-import { Telegram } from "./icons/telegram";
-import { Twitter } from "./icons/twitter";
+import { SocialLinks } from "./social-links";
 
 import { Links } from "../constants/links";
 
@@ -14,18 +12,6 @@ const NAV_ITEMS = [
   {
     label: `Privacy Policy`,
     link: Links.PRIVACY_POLICY,
-  },
-  {
-    label: <GitHub />,
-    link: Links.GITHUB,
-  },
-  {
-    label: <Telegram />,
-    link: Links.TELEGRAM,
-  },
-  {
-    label: <Twitter />,
-    link: Links.TWITTER,
   },
 ];
 
@@ -41,11 +27,12 @@ export function Footer() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-xl md:ml-8 mt-4 md:mt-0"
+              className="text-white text-xl md:ml-6 mt-4 md:mt-0"
             >
               {item.label}
             </a>
           ))}
+          <SocialLinks />
         </div>
       </nav>
     </footer>
