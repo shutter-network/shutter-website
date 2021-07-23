@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="60" height="60"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 49.7679L60 49.7679L60 59.7257L-8.70539e-07 59.7257L0 49.7679Z" fill="black"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 40.0169L60 40.0169L60 47.9831L6.96431e-07 47.9831L0 40.0169Z" fill="black"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 31.1203L60 31.1203L60 37.8418L-5.87614e-07 37.8418L0 31.1203Z" fill="black"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.8671L60 21.8671L60 27.0949L-4.57033e-07 27.0949L0 21.8671Z" fill="black"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.9916L60 11.9916L60 15.9747L-3.48216e-07 15.9747L0 11.9916Z" fill="black"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.24894L60 0.248945L60 2.24051L-1.74108e-07 2.2405L0 0.24894Z" fill="black"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: contrast(1) brightness(0.1); } }
+@media (prefers-color-scheme: dark) { :root { filter: invert(100%); } }
+</style></svg>
