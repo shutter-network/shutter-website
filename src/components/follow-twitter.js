@@ -9,7 +9,7 @@ export function FollowTwitter() {
         <Button
           label="Follow us on twitter"
           buttonType="white"
-          href=""
+          href="https://twitter.com/project_shutter"
           className="max-w-xl"
         />
       </div>

@@ -225,7 +225,7 @@ export function HowItWorks() {
         </p>
         <Button
           label="Learn more"
-          href=""
+          href="https://shutter.ghost.io/introducing-shutter-network-combating-frontrunning-and-malicious-mev-using-threshold-cryptography/"
           buttonType="white"
           className="mt-20 max-w-xl"
         />

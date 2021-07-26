@@ -15,7 +15,7 @@ export function ContactUs() {
         </h1>
         <Button
           label="contact us"
-          href=""
+          href="https://twitter.com/project_shutter"
           buttonType="white"
           className="mt-20 max-w-xl"
         />

@@ -17,7 +17,7 @@ export function WhatIsMEV() {
         </p>
         <Button
           label="Learn more about MEV"
-          href=""
+          href="https://research.paradigm.xyz/MEV"
           buttonType="white"
           className="mt-20 max-w-xl"
         />

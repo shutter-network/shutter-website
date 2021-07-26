@@ -13,13 +13,13 @@ export function About() {
       <div className="flex flex-col md:flex-row justify-between mt-6">
         <Button
           label="Try Shutter"
-          href=""
+          href="https://brainbot-com.github.io/shutter-example-dapp"
           buttonType="black"
           className="mb-4 md:mb-0 md:mr-4"
         />
         <Button
           label="Shutter on GitHub"
-          href=""
+          href="https://github.com/brainbot-com/shutter"
           buttonType="outlined"
           className="md:ml-4"
         />
