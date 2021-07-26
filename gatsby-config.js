@@ -1,6 +1,8 @@
 const tailwindConfig = require("./tailwind.config.js");
 
 module.exports = {
+  // NOTE: remove `pathPrefix` if custom domain is configured
+  pathPrefix: "/shutter-website",
   siteMetadata: {
     title: `Shutter Network`,
     description: `Preventing frontrunning and malicious MEV on Ethereum`,
