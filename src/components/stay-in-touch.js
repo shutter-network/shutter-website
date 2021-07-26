@@ -2,10 +2,12 @@ import React from "react";
 
 import { Button } from "./button";
 
+import { Links } from "../constants/links";
+
 export function StayInTouch() {
   return (
     <section className="bg-shutter-black py-28">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center">
         <div className="flex flex-row items-center">
           <div className="text-2xl md:text-4xl text-white mr-4">
             stay in touch
@@ -23,15 +25,15 @@ export function StayInTouch() {
             />
           </svg>
         </div>
-        <input
+        {/* <input
           placeholder="your e-mail"
           className="rounded-full bg-shutter-grey-dark text-white px-8 py-6 flex-1 w-full max-w-sm md:max-w-xl text-xl md:text-3xl"
-        />
+        /> */}
         <Button
           label="subscribe"
-          href=""
+          href={Links.BLOG}
           buttonType="white"
-          className="mt-4 lg:mt-0 w-full max-w-sm"
+          className="mt-4 lg:mt-0 w-full max-w-sm lg:ml-4"
         />
       </div>
     </section>
