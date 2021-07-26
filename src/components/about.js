@@ -4,7 +4,7 @@ import { Button } from "./button";
 
 export function About() {
   return (
-    <section className="text-shutter-black container mx-auto py-52 px-4 lg:px-0">
+    <section className="text-shutter-black container mx-auto py-52 px-4">
       <p className="text-3xl md:text-5xl leading-tight">
         Shutter Network is an open-source project that aims to prevent
         frontrunning on Ethereum by using a threshold cryptography-based

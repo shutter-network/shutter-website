@@ -17,7 +17,7 @@ const NAV_ITEMS = [
 export function Footer() {
   return (
     <footer className="bg-shutter-black">
-      <nav className="flex flex-col md:flex-row items-center justify-between mb-52 container mx-auto px-4 lg:px-0">
+      <nav className="flex flex-col md:flex-row items-center justify-between mb-52 container mx-auto px-4">
         <div className="uppercase text-xl text-white">Shutter Network 2021</div>
         <div className="flex flex-col md:flex-row items-center">
           {NAV_ITEMS.map((item, i) => (

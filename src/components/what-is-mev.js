@@ -5,7 +5,7 @@ import { Button } from "./button";
 export function WhatIsMEV() {
   return (
     <section className="bg-shutter-black">
-      <div className="mx-auto container px-4 lg:px-0">
+      <div className="mx-auto container px-4">
         <h1 className="text-3xl md:text-5xl uppercase text-white mb-14">
           What Is MEV?
         </h1>

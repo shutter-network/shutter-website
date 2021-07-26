@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header className="bg-shutter-black z-20">
-      <div className="flex flex-wrap items-center justify-between container p-4 mx-auto md:py-8 lg:px-0">
+      <div className="flex flex-wrap items-center justify-between container p-4 mx-auto md:py-8">
         <Link to="/">
           <Logo />
         </Link>

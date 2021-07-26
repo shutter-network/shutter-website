@@ -5,7 +5,7 @@ import { Button } from "./button";
 export function HowItWorks() {
   return (
     <section className="py-52 bg-shutter-black">
-      <div className="mx-auto container px-4 lg:px-0">
+      <div className="mx-auto container px-4">
         <h1 className="text-3xl md:text-5xl uppercase text-white mb-14">
           How Shutter works
         </h1>
