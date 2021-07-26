@@ -1,18 +1,17 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import { SocialLinks } from "./social-links";
-
-import { Links } from "../constants/links";
 
 const NAV_ITEMS = [
   {
     label: `Imprint`,
-    link: Links.IMPRINT,
+    path: "/imprint",
   },
-  {
-    label: `Privacy Policy`,
-    link: Links.PRIVACY_POLICY,
-  },
+  // {
+  //   label: `Privacy Policy`,
+  //   path: "/privacy-policy",
+  // },
 ];
 
 export function Footer() {
@@ -22,15 +21,13 @@ export function Footer() {
         <div className="uppercase text-xl text-white">Shutter Network 2021</div>
         <div className="flex flex-col md:flex-row items-center">
           {NAV_ITEMS.map((item, i) => (
-            <a
+            <Link
               key={`footer-nav-item-${i}`}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              to={item.path}
               className="text-white text-xl md:ml-6 mt-4 md:mt-0"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <SocialLinks />
         </div>
