@@ -11,7 +11,7 @@ function ImprintPage() {
         title="Imprint"
       />
       <div className="bg-shutter-black text-white">
-        <section className="container mx-auto mb-20">
+        <section className="container mx-auto mb-20 px-4">
           <h1 className="text-4xl mb-8">Imprint</h1>
           <h2 className="text-2xl font-bold">
             Imprint (information according to § 5 TMG):
