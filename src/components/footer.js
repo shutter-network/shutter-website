@@ -8,10 +8,10 @@ const NAV_ITEMS = [
     label: `Imprint`,
     path: "/imprint",
   },
-  // {
-  //   label: `Privacy Policy`,
-  //   path: "/privacy-policy",
-  // },
+  {
+    label: `Privacy Policy`,
+    path: "/privacy-policy",
+  },
 ];
 
 export function Footer() {
