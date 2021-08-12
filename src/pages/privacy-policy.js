@@ -16,7 +16,7 @@ export default function PrivacyPolicy(pageProps) {
         <section className="container mx-auto mb-20 px-4">
         <div
           className="privacy-policy mx-auto container flex flex-col space-y-4 py-10"
-          dangerouslySetInnerHTML={{ __html: pageProps.pageResources.data.markdownRemark.html }}
+          dangerouslySetInnerHTML={{ __html: pageProps.data.markdownRemark.html }}
         />
         </section>
     </div>
