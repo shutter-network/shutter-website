@@ -1,11 +1,21 @@
 import React from "react";
 
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-export default function PrivacyPolicy(pageProps) {
+export default function PrivacyPolicy() {
+  const data = useStaticQuery(graphql`
+    query PrivacyPolicy {
+      markdownRemark(
+        fileAbsolutePath: { glob: "**/privacy-policy/privacy-policy.md" }
+      ) {
+        html
+      }
+    }
+  `);
+
   return (
     <Layout className="bg-shutter-black">
       <SEO
@@ -17,7 +27,7 @@ export default function PrivacyPolicy(pageProps) {
           <div
             className="privacy-policy mx-auto container flex flex-col space-y-4 py-10"
             dangerouslySetInnerHTML={{
-              __html: pageProps.pageResources.data.markdownRemark.html,
+              __html: data.markdownRemark.html,
             }}
           />
         </section>
@@ -25,13 +35,3 @@ export default function PrivacyPolicy(pageProps) {
     </Layout>
   );
 }
-
-export const query = graphql`
-  query PrivacyPolicy {
-    markdownRemark(
-      fileAbsolutePath: { glob: "**/privacy-policy/privacy-policy.md" }
-    ) {
-      html
-    }
-  }
-`;
