@@ -2,6 +2,8 @@ import React from "react";
 
 import { Button } from "./button";
 
+import { Links } from "../constants/links";
+
 export function ContactUs() {
   return (
     <section className="py-52 bg-shutter-black">
@@ -15,7 +17,7 @@ export function ContactUs() {
         </h1>
         <Button
           label="contact us"
-          href="https://twitter.com/project_shutter"
+          href={Links.CONTACT}
           buttonType="white"
           className="mt-20 max-w-xl"
         />
