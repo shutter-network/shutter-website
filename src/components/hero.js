@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="bg-shutter-black min-w-full">
       <div className="text-white mx-auto container">
-        <h1 className="text-5xl px-4 pt-10 md:pt-24 pb-24 md:pb-36 md:text-8xl">
+        <h1 className="text-5xl px-4 md:px-6 pt-10 md:pt-24 pb-24 md:pb-36 md:text-8xl">
           Preventing
           <br />
           frontrunning and

@@ -7,7 +7,7 @@ import { Links } from "../constants/links";
 export function ContactUs() {
   return (
     <section className="py-52 bg-shutter-black">
-      <div className="mx-auto container px-4">
+      <div className="mx-auto container px-4 md:px-6">
         <h1 className="text-5xl md:text-7xl leading-tight text-shutter-green">
           fair markets
           <br />
