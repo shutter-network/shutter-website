@@ -18,7 +18,7 @@ export function Button({ label, buttonType, href, className = "" }) {
   return (
     <a
       className={`
-        rounded-full flex-1 py-6 text-xl md:text-3xl uppercase
+        rounded-full flex-1 py-6 text-xl md:text-3xl uppercase font-medium
         tracking-widest flex justify-center items-center hover:cursor-pointer
         ${bgColor} ${textColor} ${borderColor} ${className}
       `}
