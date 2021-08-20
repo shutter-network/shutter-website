@@ -39,5 +39,16 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '4',
+        matomoUrl: 'https://shutter.matomo.cloud',
+        siteUrl: 'https://shutter.network',
+        matomoPhpScript: 'matomo.php',
+        matomoJsScript: 'matomo.js',
+        dev: true,
+      }
+    }
   ],
 };
