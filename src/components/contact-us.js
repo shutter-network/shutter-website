@@ -6,9 +6,9 @@ import { Links } from "../constants/links";
 
 export function ContactUs() {
   return (
-    <section className="py-52 bg-shutter-black">
+    <section className="py-32 bg-shutter-black">
       <div className="mx-auto container px-4 md:px-6">
-        <h1 className="text-5xl md:text-7xl leading-tight text-shutter-green">
+        <h1 className="text-4xl md:text-6xl leading-tight text-shutter-green">
           fair markets
           <br />
           censorship resistance
@@ -19,7 +19,7 @@ export function ContactUs() {
           label="contact us"
           href={Links.CONTACT}
           buttonType="white"
-          className="mt-20 max-w-xl"
+          className="mt-20 max-w-xl text-center"
         />
       </div>
     </section>

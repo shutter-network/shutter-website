@@ -47,7 +47,6 @@ module.exports = {
         siteUrl: 'https://shutter.network',
         matomoPhpScript: 'matomo.php',
         matomoJsScript: 'matomo.js',
-        dev: true,
       }
     }
   ],
