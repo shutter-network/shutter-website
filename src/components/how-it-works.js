@@ -4,12 +4,12 @@ import { Button } from "./button";
 
 export function HowItWorks() {
   return (
-    <section className="py-52 bg-shutter-black">
+    <section className="py-32 bg-shutter-black">
       <div className="mx-auto container px-4 md:px-6">
-        <h1 className="text-3xl md:text-5xl uppercase text-white mb-14">
+        <h1 className="text-3xl md:text-4xl uppercase text-white mb-14">
           How Shutter works
         </h1>
-        <p className="text-3xl md:text-5xl leading-tight text-white">
+        <p className="text-3xl md:text-4xl leading-tight text-white">
           The Shutter Network uses a threshold cryptography-based{" "}
           <span className="text-shutter-green">
             distributed key generation (DKG) protocol
@@ -62,7 +62,7 @@ export function HowItWorks() {
             <path d="M1125.75 122C1124.19 122 1122.93 121.619 1121.99 120.856C1121.05 120.094 1120.58 118.74 1120.58 116.794V110.293H1118.02V107.073H1120.58L1121.03 103.07H1124.43V107.073H1128.46V110.293H1124.43V116.824C1124.43 117.546 1124.58 118.047 1124.88 118.328C1125.2 118.589 1125.74 118.72 1126.5 118.72H1128.37V122H1125.75Z" fill="white"/>
           </svg>
         </div>
-        <p className="text-3xl md:text-5xl leading-tight text-white">
+        <p className="text-3xl md:text-4xl leading-tight text-white">
           The mechanism used by Shutter can be implemented into various layers.
           The first instantiation we built is a simple drop-in solution for
           smart contracts at the application level, which is gas efficient and

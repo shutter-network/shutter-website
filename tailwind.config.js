@@ -6,10 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        "5xl": ["3rem", "1.15"],
-        "6xl": ["3.75rem", "1.15"],
-        "7xl": ["4.5rem", "1.5"],
-        "8xl": ["6rem", "1.15"],
+        "3xl": ["1.5rem", "1.3"],
+        "4xl": ["2.25rem", "1.3"],
+        "5xl": ["3rem", "1.3"],
+        "6xl": ["3.75rem", "1.3"],
+        "7xl": ["4.5rem", "1.3"],
+        "8xl": ["6rem", "1.3"],
       },
       colors: {
         "shutter-green": {
