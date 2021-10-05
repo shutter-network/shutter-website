@@ -7,7 +7,7 @@ import { Links } from "../constants/links";
 export function StayInTouch() {
   return (
     <section className="bg-shutter-black py-28">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center px-4 md:px-6">
+      <div className="md:container px-8 mx-auto flex flex-col lg:flex-row items-center">
         <div className="flex flex-row items-center">
           <div className="text-2xl md:text-4xl text-white mr-4">
             stay in touch

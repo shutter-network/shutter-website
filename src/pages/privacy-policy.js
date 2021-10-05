@@ -23,9 +23,9 @@ export default function PrivacyPolicy() {
         title="Privacy Policy"
       />
       <div className="bg-shutter-black text-white">
-        <section className="container mx-auto mb-20 px-4 md:px-6">
+        <section className="md:container mx-auto mb-20 px-4 md:px-6">
           <div
-            className="privacy-policy mx-auto container flex flex-col space-y-4 py-10"
+            className="privacy-policy mx-auto md:container flex flex-col space-y-4 py-10"
             dangerouslySetInnerHTML={{
               __html: data.markdownRemark.html,
             }}

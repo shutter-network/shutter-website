@@ -5,7 +5,7 @@ import { Button } from "./button";
 export function HowItWorks() {
   return (
     <section className="py-32 bg-shutter-black">
-      <div className="mx-auto container px-4 md:px-6">
+      <div className="mx-auto md:container px-8">
         <h1 className="text-3xl md:text-4xl uppercase text-white mb-14">
           How Shutter works
         </h1>
@@ -16,8 +16,8 @@ export function HowItWorks() {
           </span>
           .
         </p>
-        <div className="my-0 md:my-14 flex justify-center">
-          <svg width="1214" height="768" viewBox="0 0 1214 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="my-4 md:my-14 flex justify-center">
+          <svg viewBox="0 0 1214 768" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M152.978 330C152.978 319.507 161.484 311 171.978 311H336.978C347.471 311 355.978 319.507 355.978 330V470C355.978 480.493 364.484 489 374.978 489H559.978C570.471 489 578.978 497.507 578.978 508V719C578.978 729.493 570.471 738 559.978 738H171.978C161.485 738 152.978 729.493 152.978 719V330Z" fill="#B9E48C" fillOpacity="0.11" stroke="#B9E48C" strokeWidth="6" strokeLinejoin="round" strokeDasharray="12 12"/>
             <rect x="857.978" y="38" width="211.566" height="613.39" rx="15" fill="#7E7E7E"/>
             <path d="M689.801 135.022C633.156 135.022 585.545 160.151 571.939 176.926C568.685 180.939 572.225 185.25 577.392 185.25H802.211C807.378 185.25 811.053 180.912 807.902 176.817C794.621 159.563 746.782 135.022 689.801 135.022Z" fill="#7E7E7E"/>
