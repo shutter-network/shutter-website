@@ -8,7 +8,7 @@ export function About() {
       <div className="md:container mx-auto px-8">
         <p className="text-3xl md:text-4xl leading-tight">
           Shutter Network is an open-source project that aims to prevent
-          frontrunning on Ethereum by using a threshold cryptography-based
+          front running on Ethereum by using a threshold cryptography-based
           distributed key generation (DKG) protocol.
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-6 py-12">

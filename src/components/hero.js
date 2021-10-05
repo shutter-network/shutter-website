@@ -7,7 +7,7 @@ export function Hero() {
         <h1 className="md:text-8xl text-4xl px-4 md:px-6 pt-10 md:pt-24 pb-24 md:pb-36">
           Preventing
           <br />
-          frontrunning and
+          front running and
           <br />
           malicious MEV
           <br />

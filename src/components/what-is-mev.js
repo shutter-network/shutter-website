@@ -11,7 +11,7 @@ export function WhatIsMEV() {
         </h1>
         <p className="text-3xl md:text-4xl leading-tight text-white">
           Maximally Extractable Value or MEV is the revenue the block producer
-          (e.g. validator, miner, sequencer) can extract via frontrunning,
+          (e.g. validator, miner, sequencer) can extract via front running,
           injecting, reordering or censoring transactions. The MEV extracted in
           2020 alone was worth more than $314M — and that is only a lower bound.
         </p>
