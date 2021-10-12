@@ -3,7 +3,7 @@ const tailwindConfig = require("./tailwind.config.js");
 module.exports = {
   siteMetadata: {
     title: `Shutter Network`,
-    description: `Preventing frontrunning and malicious MEV on Ethereum`,
+    description: `Preventing front running and malicious MEV on Ethereum`,
     author: `@shutter`,
   },
   plugins: [

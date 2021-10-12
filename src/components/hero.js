@@ -3,19 +3,19 @@ import React from "react";
 export function Hero() {
   return (
     <section className="bg-shutter-black min-w-full">
-      <div className="text-white mx-auto container">
-        <h1 className="text-5xl px-4 md:px-6 pt-10 md:pt-24 pb-24 md:pb-36 md:text-8xl">
+      <div className="text-white mx-auto md:container px-8">
+        <h1 className="md:text-8xl text-4xl px-4 md:px-6 pt-10 md:pt-24 pb-24 md:pb-36">
           Preventing
           <br />
-          frontrunning and
+          front running and
           <br />
           malicious MEV
           <br />
           on Ethereum
         </h1>
       </div>
-      <div className="absolute top-0 right-0 w-full mt-28 opacity-50 xl:opacity-100">
-        <div className="container mx-auto flex justify-end">
+      <div className="absolute top-0 right-0 w-full md:mt-28 opacity-50 xl:opacity-100">
+        <div className="md:container mx-auto p-4 flex justify-end">
           <svg
             width="700"
             height="714"

@@ -25,5 +25,8 @@ module.exports = {
         },
       },
     },
+    container: {
+      padding: '8rem',
+    }
   },
 };
