@@ -2,21 +2,20 @@ import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
+import PreviewImage from "../images/shutter_main.png";
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ lang, meta, keywords, title }) {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
         siteMetadata {
           title
-          description
-          author
         }
       }
     }
   `);
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaTitle = title || site.siteMetadata.title;
 
   return (
     <Helmet
@@ -25,36 +24,64 @@ function SEO({ description, lang, meta, keywords, title }) {
       }}
       meta={[
         {
-          name: `description`,
-          content: metaDescription,
+          property: `og:type`,
+          content: `website`,
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle + ` - Shutter Network`,
+        },
+        {
+          property: `og:image`,
+          content: PreviewImage,
+        },
+        {
+          property: `twitter:image`,
+          content: PreviewImage,
+        },
+        {
+          property: `title`,
+          content: `Shutter Network - Preventing front-running and malicious MEV on Ethereum`,
+        },
+        {
+          name: `author`,
+          content: `Shutter Network`,
+        },
+        {
+          property: `og:locale`,
+          content: `en_US`,
+        },
+        {
+          name: `description`,
+          content: `Shutter Network is an open-source project to prevent front-running on Ethereum by using a threshold cryptography-based distributed key generation protocol`,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: `Shutter Network is an open-source project to prevent front-running on Ethereum by using a threshold cryptography-based distributed key generation protocol`,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: `og:url`,
+          content: `https://shutter.network/`,
+        },
+        {
+          property: `og:site_name`,
+          content: `Shutter Network`,
         },
         {
           name: `twitter:card`,
           content: `summary`,
         },
         {
+          property: `twitter:title`,
+          content: `Shutter Network - Preventing front-running and malicious MEV on Ethereum`,
+        },
+        {
+          name: `twitter:site`,
+          content: `@project_shutter`,
+        },
+        {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
+          content: `@project_shutter`,
         },
       ]
         .concat(
@@ -79,7 +106,6 @@ SEO.defaultProps = {
 };
 
 SEO.propTypes = {
-  description: PropTypes.string,
   keywords: PropTypes.arrayOf(PropTypes.string),
   lang: PropTypes.string,
   meta: PropTypes.array,
