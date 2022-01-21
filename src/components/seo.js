@@ -84,7 +84,7 @@ function SEO({ lang, meta, keywords, title }) {
           content: `Preventing front-running and malicious MEV on Ethereum`,
         },
         {
-          property: `twitter:image`,
+          name: `twitter:image`,
           content: 'https://shutter.network' + PreviewImage,
         },
         {
