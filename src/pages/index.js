@@ -14,8 +14,8 @@ function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={["shutter", "network", "mev", "ethereum", "dkg"]}
-        title="Home"
+        keywords={["shutter", "network", "shutter network", "shutter ethereum", "mev", "ethereum", "dkg", "front-running", "preventing front-running", "blockchain", "crypto", "mev l2", "mev layer2", "mev dkg", "mev threshold encryption", "fair ordering threshold encryption", "threshold encryption ethereum", "threshold cryptography-based distributed key generation", "distributed key generation protocol", "maximal extractable value", "miner extractable value", "arbitrage attack", "sandwich attack", "time-bandit attack", "ethereum dark forest"]}
+        title="Shutter Network - Preventing malicious MEV on Ethereum"
       />
       <Hero />
       <About />
