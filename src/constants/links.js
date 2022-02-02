@@ -1,5 +1,5 @@
 export const Links = {
-  BLOG: "https://shutter.ghost.io",
+  BLOG: "https://blog.shutter.network/",
   CONTACT:
     "https://twitter.com/messages/compose?recipient_id=1372860578369314819",
   GITHUB: "https://github.com/brainbot-com/shutter",
