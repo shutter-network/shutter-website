@@ -13,8 +13,8 @@ export function About() {
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-6 py-12">
           <Button
-            label="Try Shutter"
-            href="https://brainbot-com.github.io/shutter-example-dapp"
+            label="Learn More"
+            href="https://blog.shutter.network/introducing-shutter-network-combating-frontrunning-and-malicious-mev-using-threshold-cryptography/"
             buttonType="black"
             className="mb-4 md:mb-0 md:mr-4 text-center"
           />
