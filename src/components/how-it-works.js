@@ -70,7 +70,7 @@ export function HowItWorks() {
         </p>
         <Button
           label="Learn more"
-          href="https://blog.shutter.network/introducing-shutter-network-combating-frontrunning-and-malicious-mev-using-threshold-cryptography/"
+          href="https://blog.shutter.network/shutter-in-depth-explanation-of-how-we-prevent-frontrunning/"
           buttonType="white"
           className="mt-20 max-w-xl"
         />
