@@ -5,7 +5,7 @@
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
     "@fontsource/dm-sans": "^4.5.0",
-    "gatsby": "3.10.1",
+    "gatsby": "5.3.3",
     "gatsby-plugin-manifest": "3.10.0",
     "gatsby-plugin-matomo": "0.10.0",
     "gatsby-plugin-offline": "4.10.0",
