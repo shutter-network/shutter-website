@@ -13,14 +13,9 @@ function ImprintPage() {
       <div className="bg-shutter-black text-white">
         <section className="md:container mx-auto mb-20 px-4 md:px-6">
           <div className="privacy-policy mx-auto md:container flex flex-col space-y-4 py-10">
-            <h1 className="text-4xl mb-8">Imprint</h1>
-            <h2 className="text-2xl font-bold">
-              Imprint (information according to § 5 TMG):
-            </h2>
+            <h1 className="text-4xl mb-2">Imprint</h1>
             <p className="mb-4">
-              Brainbot Technologies AG
-              <br />
-              represented by the board members Heiko Hees and Heiko Franßen
+              brainbot gmbh
               <br />
               Taunusstrasse 61
               <br />
@@ -39,6 +34,55 @@ function ImprintPage() {
               >
                 contact@brainbot.com
               </a>
+            </p>
+            <p className="mb-4">
+              <b>
+                Management <br />
+                <i>
+                  (Geschäftsführer) <br />
+                </i>
+              </b>
+              Heiko Franßen
+            </p>
+            <p className="mb-4">
+              <b>
+                Registered seat of the company <br />
+                <i>
+                  (Sitz des Unternehmens) <br />
+                </i>
+              </b>
+              Mainz, Germany
+            </p>
+            <p className="mb-4">
+              <b>
+                District Court <br />
+                <i>
+                  (Registergericht) <br />
+                </i>
+              </b>
+              Amtsgericht Mainz, HRB 52070
+            </p>
+            <p className="mb-4">
+              <b>
+                VAT number <br />
+                <i>
+                  (Umsatzsteuer-Identifikationsnummer) <br />
+                </i>
+              </b>
+              DE129274202
+            </p>
+            <p className="mb-4">
+              <b>
+                Responsible according to § 18 Abs. 2 MStV <br />
+                <i>
+                  (Verantwortlicher gemäß § 18 Abs. 2 MStV) <br />
+                </i>
+              </b>
+              Heiko Franßen <br />
+              brainbot gmbh <br />
+              Taunusstraße 61 <br />
+              55120 Mainz <br />
+              Germany <br />
             </p>
           </div>
         </section>
