@@ -13,21 +13,31 @@ body {
   .privacy-policy h1 {
     @apply text-3xl font-semibold tracking-tighter;
   }
-  
+
   .privacy-policy h2 {
     @apply text-2xl font-semibold mt-6 mb-4 tracking-tighter;
   }
-  
+
   .privacy-policy h3 {
     @apply text-xl font-semibold mt-6 mb-4 tracking-tighter;
   }
-  
+
   .privacy-policy p {
     @apply tracking-tighter;
   }
-  
+
   .privacy-policy ul {
     @apply list-disc pl-8;
   }
-}
 
+  /*.partner {
+    max-width: 1rem;
+    max-height: 3rem;
+  }
+  */
+
+  .partnercard {
+    background-color: #7e7e7e;
+    border-radius: 12px;
+  }
+}

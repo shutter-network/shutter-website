@@ -7,6 +7,7 @@ import { About } from "../components/about";
 import { ContactUs } from "../components/contact-us";
 import { WhatIsMEV } from "../components/what-is-mev";
 import { HowItWorks } from "../components/how-it-works";
+import { Partners } from "../components/partners";
 import { FollowTwitter } from "../components/follow-twitter";
 import { StayInTouch } from "../components/stay-in-touch";
 
@@ -22,6 +23,7 @@ function IndexPage() {
       <ContactUs />
       <WhatIsMEV />
       <HowItWorks />
+      <Partners />
       <FollowTwitter />
       <StayInTouch />
     </Layout>
