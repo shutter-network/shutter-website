@@ -31,9 +31,9 @@ export function StayInTouch() {
         /> */}
         <Button
           label="subscribe"
-          href={Links.BLOG}
+          href={Links.BLOGSUB}
           buttonType="white"
-          className="mt-4 lg:mt-0 w-full max-w-sm lg:ml-4"
+          className="mt-4 lg:mt-0 w-full max-w-sm lg:ml-4 hover:text-shutter-grey"
         />
       </div>
     </section>

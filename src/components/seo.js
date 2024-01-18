@@ -29,11 +29,11 @@ function SEO({ lang, meta, keywords, title }) {
         },
         {
           name: `description`,
-          content: `Shutter Network is a project to prevent front-running and malicious MEV on Ethereum by using threshold encryption`,
+          content: `Shutter is a project to prevent front-running and malicious MEV on Ethereum by using threshold encryption`,
         },
         {
           name: `author`,
-          content: `Shutter Network`,
+          content: `Shutter`,
         },
         {
           property: `og:type`,
@@ -45,7 +45,7 @@ function SEO({ lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: `Shutter Network - Home`,
+          content: `Shutter - Home`,
         },
         {
           property: `og:description`,
@@ -57,7 +57,7 @@ function SEO({ lang, meta, keywords, title }) {
         },
         {
           property: `og:site_name`,
-          content: `Shutter Network`,
+          content: `Shutter`,
         },
         {
           property: `og:image`,
@@ -77,7 +77,7 @@ function SEO({ lang, meta, keywords, title }) {
         },
         {
           name: `twitter:title`,
-          content: `Shutter Network - Home`,
+          content: `Shutter - Home`,
         },
         {
           name: `twitter:description`,

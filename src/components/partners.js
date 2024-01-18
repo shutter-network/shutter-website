@@ -13,7 +13,7 @@ import hoprLogo from "../images/partners/hopr.svg";
 
 export function Partners() {
   return (
-    <section className="text-white md:py-24 py-10 px-4 md:px-6 bg-shutter-black">
+    <section className="text-white md:py-24 py-10 px-4 md:px-6 bg-shutter-new">
       <div className="md:container mx-auto px-8">
         <p className="text-6xl md:text-6xl leading-tight flex flex-col md:flex-col justify-between">
           Partners

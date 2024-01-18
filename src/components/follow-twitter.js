@@ -5,13 +5,13 @@ import gradesBg from "./../images/grades-background.svg";
 
 export function FollowTwitter() {
   return (
-    <section className="py-32 bg-shutter-black" style={{backgroundImage: `url(${gradesBg})`, backgroundSize: "contain"}}>
+    <section className="py-32 bg-shutter-new" style={{backgroundImage: `url(${gradesBg})`, backgroundSize: "contain"}}>
       <div className="md:container mx-auto px-8">
         <Button
           label="Follow us on twitter"
           buttonType="white"
           href="https://twitter.com/project_shutter"
-          className="mt-20 max-w-xl md:ml-4 text-center"
+          className="mt-20 max-w-xl md:ml-4 text-center hover:text-shutter-grey"
         />
       </div>
     </section>
