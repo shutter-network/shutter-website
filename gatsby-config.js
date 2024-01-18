@@ -7,7 +7,6 @@ module.exports = {
     author: `@shutter`,
   },
   plugins: [
-    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
@@ -38,16 +37,6 @@ module.exports = {
         name: `content`,
         path: `${__dirname}/src/content`,
       },
-    },
-    {
-      resolve: 'gatsby-plugin-matomo',
-      options: {
-        siteId: '4',
-        matomoUrl: 'https://shutter.matomo.cloud',
-        siteUrl: 'https://shutter.network',
-        matomoPhpScript: 'matomo.php',
-        matomoJsScript: 'matomo.js',
-      }
     }
   ],
 };

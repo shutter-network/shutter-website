@@ -12,6 +12,10 @@ const NAV_ITEMS = [
     link: Links.BLOG,
   },
   {
+    label: `forum`,
+    link: Links.FORUM,
+  },
+  {
     label: `contact`,
     link: Links.CONTACT,
   },
@@ -21,7 +25,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-shutter-black z-20">
+    <header className="bg-shutter-new z-20">
       <div className="md:container p-4 mx-auto">
         <div className="flex flex-wrap items-center justify-between md:p-8">
           <Link to="/">
@@ -47,6 +51,12 @@ function Header() {
               isExpanded ? `flex flex-col` : `hidden`
             } md:flex md:items-center w-full md:w-auto`}
           >
+          <Link to="/" className="text-3xl block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6">
+            home
+          </Link>
+          <Link to="/dao" className="text-3xl block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6">
+            DAO
+          </Link>
             {NAV_ITEMS.map((item, i) => (
               <a
                 className="text-3xl block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"

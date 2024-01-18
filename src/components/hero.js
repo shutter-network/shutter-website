@@ -2,7 +2,7 @@ import React from "react";
 
 export function Hero() {
   return (
-    <section className="bg-shutter-black min-w-full">
+    <section className="bg-shutter-new min-w-full">
       <div className="text-white mx-auto md:container px-8">
         <h1 className="md:text-8xl text-4xl px-4 md:px-6 pt-10 md:pt-24 pb-24 md:pb-36">
           Preventing

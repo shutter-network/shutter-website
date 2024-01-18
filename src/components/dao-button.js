@@ -7,11 +7,11 @@ export const ButtonType = {
   WHITE: "white",
 };
 
-export function Button({ label, buttonType, href, className = "" }) {
+export function DAOButton({ label, buttonType, href, className = "" }) {
   const bgColor =
-    buttonType === ButtonType.BLACK ? "bg-shutter-new" : "bg-white";
+    buttonType === ButtonType.BLACK ? "bg-shutter-green" : "bg-white";
   const textColor =
-    buttonType === ButtonType.BLACK ? "text-white" : "text-shutter-black";
+    buttonType === ButtonType.BLACK ? "text-shutter-new" : "text-shutter-black";
   const borderColor =
     buttonType === ButtonType.OUTLINED ? "border-shutter-black border-4" : "";
 
@@ -31,7 +31,7 @@ export function Button({ label, buttonType, href, className = "" }) {
   );
 }
 
-Button.propTypes = {
+DAOButton.propTypes = {
   label: PropTypes.string.isRequired,
   buttonType: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,

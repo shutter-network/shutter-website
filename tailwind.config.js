@@ -15,10 +15,11 @@ module.exports = {
       },
       colors: {
         "shutter-green": {
-          DEFAULT: "#B9E48C",
+          DEFAULT: "#D4ED7A",
           transparent: "rgba(185, 228, 140, 0.11)",
         },
         "shutter-black": "#2C2D33",
+        "shutter-new": "#051016",
         "shutter-grey": {
           DEFAULT: "#919191",
           dark: "#4F4F4F",

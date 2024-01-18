@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="bg-shutter-black">
       <nav className="flex flex-col md:flex-row items-center justify-between mb-52 md:container px-8 mx-auto">
-        <div className="uppercase text-xl text-white">Shutter Network 2021</div>
+        <div className="uppercase text-xl text-white">Shutter 2024</div>
         <div className="flex flex-col md:flex-row items-center">
           {NAV_ITEMS.map((item, i) => (
             <Link
