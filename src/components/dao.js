@@ -24,7 +24,7 @@ export function DAO() {
           />
           <Button
             label="Join the Forum"
-            href="https://shutterprotodao.discourse.group/"
+            href="https://shutterdao.discourse.group/"
             buttonType="outlined"
             className="md:ml-4 text-center hover:text-shutter-grey"
           />
