@@ -1,7 +1,7 @@
 import React from "react";
 
 import { GitHub } from "./icons/github";
-import { Telegram } from "./icons/telegram";
+import { Discord } from "./icons/discord";
 import { Twitter } from "./icons/twitter";
 
 import { Links } from "../constants/links";
@@ -12,8 +12,8 @@ const SOCIAL_ITEMS = [
     link: Links.GITHUB,
   },
   {
-    label: <Telegram />,
-    link: Links.TELEGRAM,
+    label: <Discord />,
+    link: Links.DISCORD,
   },
   {
     label: <Twitter />,
