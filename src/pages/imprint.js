@@ -69,7 +69,7 @@ function ImprintPage() {
                   (Umsatzsteuer-Identifikationsnummer) <br />
                 </i>
               </b>
-              DE129274202
+              DE231725642
             </p>
             <p className="mb-4">
               <b>
