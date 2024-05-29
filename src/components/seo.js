@@ -89,11 +89,11 @@ function SEO({ lang, meta, keywords, title }) {
         },
         {
           name: `twitter:site`,
-          content: `@project_shutter`,
+          content: `@ShutterNetwork`,
         },
         {
           name: `twitter:creator`,
-          content: `@project_shutter`,
+          content: `@ShutterNetwork`,
         },
         {
           name: `google-site-verification`,

@@ -28,7 +28,7 @@ export function ProtoDAO() {
             SPT Token
           </h1>
           <p className="text-xl py-4 text-shutter-new">
-          <a href="https://twitter.com/project_shutter/status/1673339562838335491" target="_blank" className="underline">SPT holders are early supporters</a> with faith and contributions to the project. <a href="https://etherscan.io/token/0xcbe3aef2fa9899d713ca592737b6aeb33668ba4e" target="_blank" className="underline">SPT is a non-liquid, privately sold currency token</a> intended for users and integrators to pay Keypers.
+          <a href="https://twitter.com/ShutterNetwork/status/1673339562838335491" target="_blank" className="underline">SPT holders are early supporters</a> with faith and contributions to the project. <a href="https://etherscan.io/token/0xcbe3aef2fa9899d713ca592737b6aeb33668ba4e" target="_blank" className="underline">SPT is a non-liquid, privately sold currency token</a> intended for users and integrators to pay Keypers.
           </p>
         </div>
       </div>

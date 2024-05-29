@@ -9,7 +9,7 @@ export const Links = {
   GITHUB: "https://github.com/shutter-network",
   TELEGRAM: "https://t.me/+wsTahoNJyToyZjY6",
   DISCORD: "https://discord.gg/Fx7m5cUcua",
-  TWITTER: "https://twitter.com/project_shutter",
+  TWITTER: "https://twitter.com/ShutterNetwork",
   IMPRINT: "",
   PRIVACY_POLICY: "",
 };
