@@ -10,7 +10,7 @@ export function FollowTwitter() {
         <Button
           label="Follow us on twitter"
           buttonType="white"
-          href="https://twitter.com/project_shutter"
+          href="https://twitter.com/ShutterNetwork"
           className="mt-20 max-w-xl md:ml-4 text-center hover:text-shutter-grey"
         />
       </div>
