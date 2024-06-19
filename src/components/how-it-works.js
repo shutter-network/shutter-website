@@ -6,15 +6,13 @@ export function HowItWorks() {
   return (
     <section className="py-32 bg-shutter-new">
       <div className="mx-auto md:container px-8">
-        <h1 className="text-3xl md:text-4xl uppercase text-white mb-14">
-          How Shutter works
+        <h1 className="text-3xl md:text-4xl uppercase text-shutter-green mb-14">
+          Shutter’s Solution
         </h1>
-        <p className="text-3xl md:text-4xl leading-tight text-white">
-          Shutter uses a threshold cryptography-based{" "}
-          <span className="text-shutter-green">
-            distributed key generation (DKG) protocol
-          </span>
-          .
+        <p className="text-2xl md:text-3xl leading-tight text-white">
+          Public blockchains are founded on the principles of base layer neutrality, information symmetry, and accessibility. These principles are essential for the Ethereum community and users. However, many people in and outside the crypto space feel left out and at risk of DeFi scams, which is a troubling reality.<br />
+          <br />
+          Shutter aims to establish a fair marketplace that promotes an efficient, inclusive, and reliable environment.
         </p>
         <div className="my-4 md:my-14 flex justify-center">
           <svg viewBox="0 0 1214 768" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,15 +60,12 @@ export function HowItWorks() {
             <path d="M1125.75 122C1124.19 122 1122.93 121.619 1121.99 120.856C1121.05 120.094 1120.58 118.74 1120.58 116.794V110.293H1118.02V107.073H1120.58L1121.03 103.07H1124.43V107.073H1128.46V110.293H1124.43V116.824C1124.43 117.546 1124.58 118.047 1124.88 118.328C1125.2 118.589 1125.74 118.72 1126.5 118.72H1128.37V122H1125.75Z" fill="white"/>
           </svg>
         </div>
-        <p className="text-3xl md:text-4xl leading-tight text-white">
-          The mechanism used by Shutter can be implemented into various layers.
-          The first instantiation we built is a simple drop-in solution for
-          smart contracts at the application level, which is gas efficient and
-          doesn’t require L1/L2 protocol changes.
+        <p className="text-2xl md:text-3xl leading-tight text-white">
+        By using transaction encryption, Shutter supports fairness and prevents exploitative practices. This is essential for protecting the integrity and ensuring equal access to blockchains, which are at risk from centralization and censorship. Taking action against these challenges will help ensure blockchain technology remains a positive force in the world.
         </p>
         <Button
           label="Learn more"
-          href="https://blog.shutter.network/shutter-in-depth-explanation-of-how-we-prevent-frontrunning/"
+          href="https://blog.shutter.network/introducing-shutter-network-combating-frontrunning-and-malicious-mev-using-threshold-cryptography/"
           buttonType="white"
           className="mt-20 max-w-xl hover:text-shutter-grey"
         />

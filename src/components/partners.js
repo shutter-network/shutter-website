@@ -24,17 +24,11 @@ export function Partners() {
           </h1>
         </div>
         <div className="flex flex-row md:flex-row lg:mt-4 mt-4 sm:mr-2 xl:ml-16 xl:mr-96 xl:pr-64 text-lg">
-          Rollups can now start integrating an encrypted mempool using threshold
-          encryption for malicious MEV protection and real-time censorship
-          resistance.
+          Rollups can now integrate Shutter's Shielded Trading, an encrypted mempool using threshold encryption to protect against malicious MEV and real-time censorship resistance.
         </div>
         <div className="flex flex-col md:flex-col">
           <div className="flex flex-col xl:flex-row xl:basis-1/2 xl:mt-2 xl:py-2 xl:px-8 w-full justify-between">
             <div className="flex flex-col xl:flex-col text-2xl xl:text-2xl leading-tight sm:w-1/2 my-2 xl:w-1/4 xl:h-2/5 justify-self-center xl:mx-8 p-4 partnercard m-auto">
-              <p className="h-44 p-2 text-base xl:text-lg">
-                Conduit allows anyone to deploy a rollup through our self-serve
-                platform in a matter of minutes, no code required.
-              </p>
               <a
                 href="https://conduit.xyz/integrations"
                 rel="noreferrer"
@@ -48,11 +42,6 @@ export function Partners() {
               </a>
             </div>
             <div className="flex flex-col xl:flex-col text-2xl xl:text-2xl leading-tight sm:w-1/2 my-2 xl:w-1/4 xl:h-2/5 justify-self-center xl:mx-8 p-4 partnercard m-auto">
-              <p className="h-44 p-2 text-base xl:text-lg">
-                Gelato is web3’s decentralized backend empowering builders to
-                create augmented smart contracts that are automated, gasless &
-                off-chain aware.
-              </p>
               <a
                 href="https://www.gelato.network/"
                 rel="noreferrer"
@@ -66,10 +55,6 @@ export function Partners() {
               </a>
             </div>
             <div className="flex flex-col xl:flex-col text-2xl xl:text-2xl leading-tight sm:w-1/2 my-2 xl:w-1/4 xl:h-2/5 justify-self-center xl:mx-8 p-4 partnercard m-auto">
-              <p className="h-44 p-2 text-base xl:text-lg">
-                Launch your application-specific Rollup with the Zeeve Web3
-                Platform.
-              </p>
               <a
                 href="https://www.zeeve.io/integrations/"
                 rel="noreferrer"
@@ -85,9 +70,6 @@ export function Partners() {
           </div>
           <div className="flex flex-col xl:flex-row xl:basis-1/2 xl:mt-2 xl:py-2 xl:px-8 w-full justify-between">
             <div className="flex flex-col xl:flex-col text-2xl xl:text-2xl leading-tight sm:w-1/2 my-2 xl:w-1/4 xl:h-2/5 justify-self-center xl:mx-8 p-4 partnercard m-auto">
-              <p className="h-44 p-2 text-base xl:text-lg">
-                Instant private zk-rollups, with all the tools.
-              </p>
               <a href="https://gateway.fm/" rel="noreferrer" target="_blank">
                 <img
                   src={gatewayLogo}
@@ -97,9 +79,6 @@ export function Partners() {
               </a>
             </div>
             <div className="flex flex-col xl:flex-col text-2xl xl:text-2xl leading-tight sm:w-1/2 my-2 xl:w-1/4 xl:h-2/5 justify-self-center xl:mx-8 p-4 partnercard m-auto">
-              <p className="h-44 p-2 text-base xl:text-lg">
-                AltLayer is an open and decentralised interlayer for rollups.
-              </p>
               <a
                 href="https://altlayer.io/raas"
                 rel="noreferrer"
@@ -113,10 +92,6 @@ export function Partners() {
               </a>
             </div>
             <div className="flex flex-col xl:flex-col text-2xl xl:text-2xl leading-tight sm:w-1/2 my-2 xl:w-1/4 xl:h-2/5 justify-self-center xl:mx-8 p-4 partnercard m-auto">
-              <p className="h-44 p-2 text-base xl:text-lg">
-                Caldera makes it easy to launch performant, customizable
-                Arbitrum Orbit and OP Stack rollups. No code required.
-              </p>
               <a
                 href="https://caldera.xyz/integrations/"
                 rel="noreferrer"
@@ -136,18 +111,13 @@ export function Partners() {
             </h1>
           </div>
           <div className="flex flex-row md:flex-row lg:mt-4 mt-4 sm:mr-2 xl:ml-16 xl:mr-96 xl:pr-64 text-lg">
-            Accessibility, base layer neutrality and censorship resistance form
-            the basis of the value proposition of public blockchains like Gnosis
-            Chain and Ethereum and we believe an encrypted mempool is a key
-            requisite and major milestone towards ensuring those fundamental
-            properties.
+            Accessibility, base layer neutrality, and censorship resistance are the core components of public blockchains' value propositions, such as Gnosis Chain and Ethereum. We believe an encrypted mempool is essential for safeguarding these fundamental properties and represents a significant milestone in achieving this goal.
           </div>
           <div className="flex flex-col md:flex-col">
             <div className="flex flex-col xl:flex-row xl:basis-1/2 xl:mt-2 xl:py-2 xl:px-8 w-full justify-between">
               <div className="flex flex-col xl:flex-col text-2xl xl:text-2xl leading-tight sm:w-1/2 my-2 xl:w-1/4 xl:h-2/5 justify-self-center xl:mx-8 p-4 partnercard m-auto">
                 <p className="h-44 p-2 text-base xl:text-lg">
-                  Gnosis Chain is one of the first Ethereum sidechains and has
-                  stayed true to its values.
+                Gnosis Chain is a community-owned network operated by a diverse set of 200k+ validators around the world.
                 </p>
                 <a
                   href="https://www.gnosis.io/"
@@ -169,10 +139,7 @@ export function Partners() {
             </h1>
           </div>
           <div className="flex flex-row md:flex-row lg:mt-4 mt-4 sm:mr-2 xl:ml-16 xl:mr-96 xl:pr-64 text-lg">
-            Shutter Governance, a tool for governance platforms to introduce
-            shielded voting for their users. It uses threshold encryption and is
-            designed to fix issues with misbehavior, voter apathy, and voting
-            incentive systems.
+            Shielded Voting offers governance platforms a way to implement partially private voting for users using threshold encryption. It aims to address issues such as misbehavior, voter apathy, and flaws in voting incentive systems.
           </div>
           <div className="flex flex-col md:flex-col">
             <div className="flex flex-col xl:flex-row xl:basis-1/2 xl:mt-2 xl:py-2 xl:px-8 w-full justify-between">
