@@ -13,10 +13,10 @@ export function Claim() {
             Introducing the Shutter Network Genesis Allocations
           </h1>
           <p className="text-xl py-4 text-white">
-          Phase 1 of a Shutter DAO focuses on laying a solid groundwork and establishing effective governance. During this initial phase, a comprehensive governance framework is created, ensuring a fair distribution of the initial token allocation and introducing non-transferable tokens.
+          Phase 1 of a Shutter DAO focuses on establishing effective governance and laying a solid groundwork. A comprehensive governance framework is created, ensuring fair distribution of the initial token allocation and introducing non-transferable tokens.
           </p>
           <p className="text-xl py-4 text-white">
-          The Genesis Allocations are smart contracts deployed on the Ethereum blockchain. An allocation contains a list of addresses as they have been deployed in  the and the amount of claimable Shutter Tokens (e.g., SHU) per address in the form of a Merkle root.
+          Genesis Allocations are smart contracts deployed on the Ethereum blockchain. Each allocation contains a list of addresses and the amount of claimable Shutter Tokens (e.g., SHU) per address in the form of a Merkle root.
           </p>
           <Button
             label="go to claim page"

@@ -22,7 +22,7 @@ export function ClaimPaged() {
             label="go to claim page"
             href={Links.CLAIM}
             buttonType="white"
-            className="mt-10 max-w-xl text-center hover:text-shutter-grey"
+            className="mt-10 max-w-xl text-center hover:text-shutter-green-mid"
           />
         </div>
       </div>

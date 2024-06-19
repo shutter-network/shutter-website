@@ -9,22 +9,21 @@ export function ContactUs() {
     <section className="md:py-32 py-10 bg-shutter-new">
       <div className="mx-auto md:container px-8">
         <div className="">
-          <h1 className="text-4xl md:text-6xl leading-tight text-shutter-green">
-            fair markets
-            <br />
-            censorship resistance
-            <br />
-            no protocol change
+          <h1 className="text-4xl md:text-6xl leading-tight text-shutter-green py-4">
+            Base Layer Neutrality
+          </h1>
+          <h1 className="text-4xl md:text-6xl leading-tight text-shutter-green py-4">
+            Information Symmetry
+          </h1>
+          <h1 className="text-4xl md:text-6xl leading-tight text-shutter-green py-4">
+            Accessibility
           </h1>
           <p className="text-white py-4 text-2xl">
-          Shutter is a project to address the challenge of malicious MEV on Ethereum as well as other information asymmetries in distributed systems. Shutter aims to protect users from such exploitation by employing a distributed key generation mechanism, ensuring fair and secure transactions on Ethereum and Layer 2 solutions like rollups and sidechains.
+            Shutter is a system that focuses on base layer neutrality, information symmetry, and accessibility by using threshold encryption with a Distributed Key Generation (DKG) mechanism.
           </p>
-          <Button
-            label="contact us"
-            href={Links.CONTACT}
-            buttonType="white"
-            className="mt-20 max-w-xl text-center hover:text-shutter-grey"
-          />
+          <p className="text-white py-4 text-2xl">
+            In a Shutterized system, users encrypt their transactions or votes until their inclusion and order are fixed. Only then does a threshold amount of Shutter Keypers collaboratively provide a decryption key that can be used to decrypt and execute the transactions.
+          </p>
         </div>
       </div>
     </section>

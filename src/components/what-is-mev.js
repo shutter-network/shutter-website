@@ -6,18 +6,15 @@ export function WhatIsMEV() {
   return (
     <section className="bg-shutter-new">
       <div className="mx-auto md:container px-8">
-        <h1 className="text-3xl md:text-4xl uppercase text-white mb-14">
-          What Is MEV?
+        <h1 className="text-4xl md:text-5xl uppercase text-shutter-orange mb-14">
+          The $900 Million Problem
         </h1>
-        <p className="text-3xl md:text-4xl leading-tight text-white">
-          Maximal Extractable Value or MEV is the revenue the block producer
-          (e.g. validator, miner, sequencer) can extract via front running,
-          injecting, reordering or censoring transactions. The MEV extracted in
-          2020 alone was worth more than $314M — and that is only a lower bound.
+        <p className="text-2xl md:text-3xl leading-tight text-white">
+          Shutter's approach is crucial in today's Web3 landscape, where hundreds of millions of dollars are stolen yearly on Ethereum through malicious Maximal Extractable Value (MEV) attacks. These attacks, including sandwich attacks, involve manipulating transactions for financial gain, ultimately harming traders and end-users.
         </p>
         <Button
           label="Learn more about MEV"
-          href="https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest"
+          href="https://blog.shutter.network/what-the-heck-is-miner-extractable-value-a-series-about-mev-basics/"
           buttonType="white"
           className="mt-20 max-w-xl md:ml-4 text-center hover:text-shutter-grey"
         />

@@ -4,7 +4,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Hero } from "../components/hero";
 import { About } from "../components/about";
+import { Solutions } from "../components/solutions";
+import { Trading } from "../components/shielded-trading";
+import { Voting } from "../components/shielded-voting";
+import { Gaming } from "../components/shielded-gaming";
 import { DAO } from "../components/dao";
+import { DAO0x36 } from "../components/dao0x36";
 import { Claim } from "../components/claim";
 import { ContactUs } from "../components/contact-us";
 import { WhatIsMEV } from "../components/what-is-mev";
@@ -25,7 +30,12 @@ function IndexPage() {
       <ContactUs />
       <WhatIsMEV />
       <HowItWorks />
+      <Solutions />
+      <Trading />
+      <Voting />
+      <Gaming />
       <DAO />
+      <DAO0x36 />
       <Claim />
       <Partners />
       <FollowTwitter />

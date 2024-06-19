@@ -1,7 +1,7 @@
 export const Links = {
   BLOG: "https://blog.shutter.network/",
   BLOGSUB: "https://blog.shutter.network/#/portal/signup",
-  FORUM: "https://shutterdao.discourse.group/",
+  FORUM: "https://shutternetwork.discourse.group/",
   protoDAO: "https://blog.shutter.network/announcing-the-shutter-protodao/",
   CLAIM: "https://claim.shutter.network/",
   CONTACT:

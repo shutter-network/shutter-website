@@ -5,13 +5,13 @@ export function Hero() {
     <section className="bg-shutter-new min-w-full">
       <div className="text-white mx-auto md:container px-8">
         <h1 className="md:text-8xl text-4xl px-4 md:px-6 pt-10 md:pt-24 pb-24 md:pb-36">
-          Preventing
+          <span class="text-shutter-green">Shutter</span>
           <br />
-          front running and
+          Defending the
           <br />
-          malicious MEV
+          Crypto
           <br />
-          on Ethereum
+          Realm
         </h1>
       </div>
       <div className="absolute top-0 right-0 w-full md:mt-28 opacity-50 xl:opacity-100">
