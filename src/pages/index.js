@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Hero } from "../components/hero";
 import { About } from "../components/about";
+import { SGC } from "../components/shutterized_gnosis_chain";
 import { Solutions } from "../components/solutions";
 import { Trading } from "../components/shielded-trading";
 import { Voting } from "../components/shielded-voting";
@@ -27,6 +28,7 @@ function IndexPage() {
       />
       <Hero />
       <About />
+      <SGC />
       <ContactUs />
       <WhatIsMEV />
       <HowItWorks />
