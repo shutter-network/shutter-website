@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shutter.network/</loc></url>
-  <url><loc>https://shutter.network/about.html</loc></url>
-  <url><loc>https://shutter.network/protocol.html</loc></url>
-  <url><loc>https://shutter.network/shielded-trading.html</loc></url>
-  <url><loc>https://shutter.network/shielded-voting.html</loc></url>
-  <url><loc>https://shutter.network/shu-token.html</loc></url>
-  <url><loc>https://shutter.network/shutter-api.html</loc></url>
-  <url><loc>https://shutter.network/shutter-dao.html</loc></url>
-  <url><loc>https://shutter.network/imprint.html</loc></url>
-  <url><loc>https://shutter.network/privacy-policy.html</loc></url>
+  <url><loc>https://shutter.network/about/</loc></url>
+  <url><loc>https://shutter.network/protocol/</loc></url>
+  <url><loc>https://shutter.network/shielded-trading/</loc></url>
+  <url><loc>https://shutter.network/shielded-voting/</loc></url>
+  <url><loc>https://shutter.network/shu-token/</loc></url>
+  <url><loc>https://shutter.network/shutter-api/</loc></url>
+  <url><loc>https://shutter.network/shutter-dao/</loc></url>
+  <url><loc>https://shutter.network/imprint/</loc></url>
+  <url><loc>https://shutter.network/privacy-policy/</loc></url>
 </urlset>
