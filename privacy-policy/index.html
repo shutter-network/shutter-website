@@ -33,19 +33,49 @@
 </style>
   <script>
   var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['disableCookies']);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="https://shutter.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    var u = 'https://shutter.matomo.cloud/';
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
     _paq.push(['setSiteId', '4']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/shutter.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true; g.src = 'https://cdn.matomo.cloud/shutter.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+  (function() {
+    var CONSENT_KEY = 'sn_analytics_consent';
+    var consent = localStorage.getItem(CONSENT_KEY);
+    if (consent === 'accepted') { _paq.push(['rememberCookieConsentGiven']); }
+    document.addEventListener('DOMContentLoaded', function() {
+      var banner = document.getElementById('sn-consent-banner');
+      var acceptBtn = document.getElementById('sn-consent-accept');
+      var declineBtn = document.getElementById('sn-consent-decline');
+      if (consent === null) { banner.removeAttribute('hidden'); }
+      acceptBtn.addEventListener('click', function() {
+        localStorage.setItem(CONSENT_KEY, 'accepted');
+        banner.setAttribute('hidden', '');
+        _paq.push(['rememberCookieConsentGiven']);
+      });
+      declineBtn.addEventListener('click', function() {
+        localStorage.setItem(CONSENT_KEY, 'declined');
+        banner.setAttribute('hidden', '');
+      });
+    });
   })();
 </script>
   <meta name="google-site-verification" content="vniF73ij92Xco4_iHggmpNOrSP0bEbJfxonBETjemrQ">
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-tab-rotation-webflow@1.2.2/dist/tab-rotation.js" type="text/javascript" integrity="sha384-NfwimfVJo0ivYDT5XCEV0qOVEOg5WAi1gRKNLKf9B1yMkwajX9dVU7Hjb+V0UFNr" crossorigin="anonymous"></script>
+  <style>
+  .sn-consent-banner{position:fixed;bottom:0;left:0;right:0;background:#051016;color:#fff;z-index:9999;padding:16px 24px;font-family:'Space Grotesk',sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,0.3);}
+  .sn-consent-banner__inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+  .sn-consent-banner__text{margin:0;font-size:14px;line-height:1.5;flex:1;min-width:200px;}
+  .sn-consent-banner__text a{color:#f5c842;text-decoration:underline;}
+  .sn-consent-banner__btns{display:flex;gap:10px;flex-shrink:0;}
+  .sn-consent-banner__btn{padding:8px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;}
+  .sn-consent-banner__btn--accept{background:#0066ff;color:#fff;}
+  .sn-consent-banner__btn--decline{background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);}
+  </style>
 </head>
 <body>
   <div class="w-embed">
@@ -220,10 +250,11 @@
           </div>
           <div class="privacy-wrap-item">
             <h2 class="is-h2-privacy">2. Personal information we collect</h2>
-            <p class="is-p-privacy">When you visit the website, we may automatically collect certain information about you and your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the website, we may collect information about the individual web pages or products that you view, what websites or search terms referred you to the website, and information about how you interact with the website. We refer to this automatically-collected information as &quot;Device Information.&quot;</p>
-            <p class="is-p-privacy">We collect Device Information using the following technologies:</p>
+            <p class="is-p-privacy">When you visit the website, we may automatically collect certain information about you and your device. We refer to this automatically-collected information as &quot;Device Information.&quot; We collect it through the following technologies:</p>
             <ul role="list" class="is-p-privacy">
-              <li class="list-item">&quot;Log files&quot; track actions occurring on the website, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.</li>
+              <li class="list-item"><strong>Server log files</strong> — collected automatically on every visit. Includes your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.</li>
+              <li class="list-item"><strong>Matomo Analytics (cookieless mode)</strong> — active by default on every visit. Collects your anonymised IP address (truncated by 2 bytes), browser type, operating system, pages visited, referrer URL, and time zone. No cookie is set and no persistent identifier is stored on your device.</li>
+              <li class="list-item"><strong>Matomo Analytics (cookie mode)</strong> — only active if you accept cookies via the notice shown on your first visit. Sets a cookie that allows us to recognise your browser on future visits for session continuity. You can withdraw this consent at any time by clearing your browser&#x27;s local storage for this site.</li>
             </ul>
             <p class="is-p-privacy">Additionally, if you sign up for a newsletter through the website, we collect your email address. We refer to this information as &quot;Subscription Information.&quot; In the course of our interactions, we may also collect a record and details of any correspondence or communications between you and us relating to any information request or job application submitted to us. We refer to this information as &quot;Communication Information&quot;. When we talk about &quot;Personal Information&quot; in this Privacy Policy, we are talking both about Device Information, Subscription Information and Communication Information.</p>
           </div>
@@ -276,13 +307,12 @@
           </div>
           <div class="privacy-wrap-item">
             <h2 class="is-h2-privacy">10. Web analysis tool Matomo</h2>
-            <p class="is-p-privacy">We analyze the use of our website with the open-source web analysis tool Matomo (formerly Piwik; data protection declaration can be found at https://matomo.org/privacy-policy/). For this purpose, the automatically collected IP addresses are anonymized before the evaluation. The analysis is therefore based on anonymized data records and there is no personal evaluation. The web analysis is used exclusively to optimize the website in terms of user-friendliness and to provide useful information about our services. This data is not merged with other personal data sources or passed on to third parties.</p>
-            <p class="is-p-privacy">In addition to the data mentioned, Matomo also uses so-called &quot;cookies&quot; (see below).</p>
+            <p class="is-p-privacy">This website uses Matomo, an open-source analytics tool, for statistical analysis of website traffic. Matomo is operated as a cloud service by InnoCraft Ltd. (New Zealand) and processes data on behalf of brainbot gmbh.</p>
+            <p class="is-p-privacy">By default, Matomo is operated in cookieless mode. No cookies are set and IP addresses are anonymised before storage (truncated by 2 bytes). The legal basis for this processing is our legitimate interests in understanding how the website is used (Art. 6(1)(f) GDPR). If you accept via the cookie notice shown on your first visit, analytics cookies will be set to recognise your browser on future visits. This cookie-based processing is based on your consent (Art. 6(1)(a) GDPR), which you may withdraw at any time by clearing your browser&#x27;s local storage for this site. For more information, see: <a href="https://matomo.org/privacy-policy/" target="_blank" rel="noopener">matomo.org/privacy-policy</a></p>
           </div>
           <div class="privacy-wrap-item">
             <h2 class="is-h2-privacy">11. Cookies</h2>
-            <p class="is-p-privacy">We use cookies on our website to make our offer user-friendly (Matomo, see above). Cookies are small files that your browser automatically creates and that are stored on your end device (laptop, tablet, smartphone, etc.) when you visit our website. The cookies remain stored until you delete them. This enables us to recognize your browser the next time you visit.</p>
-            <p class="is-p-privacy">If you do not want this, you can set up your browser so that it informs you about the setting of cookies and allows them in individual cases. However, we would like to point out that deactivation means that you may not be able to use all functions of our website.</p>
+            <p class="is-p-privacy">We use analytics cookies only when you have explicitly consented via the cookie notice shown on your first visit. Cookies set by Matomo are small files your browser stores on your end device (laptop, tablet, smartphone, etc.) that allow us to recognise your browser on future visits. If you do not consent, no Matomo cookies are placed. You can withdraw consent at any time by clearing your browser&#x27;s local storage or configuring your browser to block cookies.</p>
           </div>
           <div class="privacy-wrap-item">
             <h2 class="is-h2-privacy">12. Changes</h2>
@@ -389,5 +419,14 @@ $('[data-click="faq"]').click(function(){
   }
 });
 </script>
+<div id="sn-consent-banner" class="sn-consent-banner" role="dialog" aria-label="Cookie notice" hidden>
+  <div class="sn-consent-banner__inner">
+    <p class="sn-consent-banner__text">This site uses Matomo Analytics. By default, no cookies are set. Accept to allow cookies that recognize you on future visits. <a href="/privacy-policy/" rel="noopener">Privacy policy</a></p>
+    <div class="sn-consent-banner__btns">
+      <button id="sn-consent-accept" class="sn-consent-banner__btn sn-consent-banner__btn--accept">Accept</button>
+      <button id="sn-consent-decline" class="sn-consent-banner__btn sn-consent-banner__btn--decline">No thanks</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>

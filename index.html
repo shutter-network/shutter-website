@@ -36,19 +36,49 @@
 </style>
   <script>
   var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['disableCookies']);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="https://shutter.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    var u = 'https://shutter.matomo.cloud/';
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
     _paq.push(['setSiteId', '4']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/shutter.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true; g.src = 'https://cdn.matomo.cloud/shutter.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+  (function() {
+    var CONSENT_KEY = 'sn_analytics_consent';
+    var consent = localStorage.getItem(CONSENT_KEY);
+    if (consent === 'accepted') { _paq.push(['rememberCookieConsentGiven']); }
+    document.addEventListener('DOMContentLoaded', function() {
+      var banner = document.getElementById('sn-consent-banner');
+      var acceptBtn = document.getElementById('sn-consent-accept');
+      var declineBtn = document.getElementById('sn-consent-decline');
+      if (consent === null) { banner.removeAttribute('hidden'); }
+      acceptBtn.addEventListener('click', function() {
+        localStorage.setItem(CONSENT_KEY, 'accepted');
+        banner.setAttribute('hidden', '');
+        _paq.push(['rememberCookieConsentGiven']);
+      });
+      declineBtn.addEventListener('click', function() {
+        localStorage.setItem(CONSENT_KEY, 'declined');
+        banner.setAttribute('hidden', '');
+      });
+    });
   })();
 </script>
   <meta name="google-site-verification" content="vniF73ij92Xco4_iHggmpNOrSP0bEbJfxonBETjemrQ">
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-tab-rotation-webflow@1.2.2/dist/tab-rotation.js" type="text/javascript" integrity="sha384-NfwimfVJo0ivYDT5XCEV0qOVEOg5WAi1gRKNLKf9B1yMkwajX9dVU7Hjb+V0UFNr" crossorigin="anonymous"></script>
+  <style>
+  .sn-consent-banner{position:fixed;bottom:0;left:0;right:0;background:#051016;color:#fff;z-index:9999;padding:16px 24px;font-family:'Space Grotesk',sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,0.3);}
+  .sn-consent-banner__inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+  .sn-consent-banner__text{margin:0;font-size:14px;line-height:1.5;flex:1;min-width:200px;}
+  .sn-consent-banner__text a{color:#f5c842;text-decoration:underline;}
+  .sn-consent-banner__btns{display:flex;gap:10px;flex-shrink:0;}
+  .sn-consent-banner__btn{padding:8px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;}
+  .sn-consent-banner__btn--accept{background:#0066ff;color:#fff;}
+  .sn-consent-banner__btn--decline{background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);}
+  </style>
 </head>
 <body>
   <div class="w-embed">
@@ -466,5 +496,14 @@ $('[data-click="faq"]').click(function(){
 });
 </script>
   <script src="https://kc649h.csb.app/script.js"></script>
+<div id="sn-consent-banner" class="sn-consent-banner" role="dialog" aria-label="Cookie notice" hidden>
+  <div class="sn-consent-banner__inner">
+    <p class="sn-consent-banner__text">This site uses Matomo Analytics. By default, no cookies are set. Accept to allow cookies that recognize you on future visits. <a href="/privacy-policy/" rel="noopener">Privacy policy</a></p>
+    <div class="sn-consent-banner__btns">
+      <button id="sn-consent-accept" class="sn-consent-banner__btn sn-consent-banner__btn--accept">Accept</button>
+      <button id="sn-consent-decline" class="sn-consent-banner__btn sn-consent-banner__btn--decline">No thanks</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
