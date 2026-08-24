@@ -687,8 +687,8 @@
 <script>
 (async function () {
   var RPC = 'https://1rpc.io/eth';
-  var SEAT = '0x814E141206b69afE94F298c080D8431e23473aB0';
-  var PM   = '0xCD93e9f8AbC0a22Cf2ae1435fb19b69c7E2ddE27';
+  var SEAT = '0xe2F401A0fb40dA191b9fa8C44Fa09D31cE17374c';
+  var PM   = '0x4517651c7071fecDA97Eb656a9d3A50B92b84517';
 
   async function rpcCall(to, data) {
     var res = await fetch(RPC, {
@@ -722,7 +722,13 @@
     return '$' + n.toFixed(2);
   }
 
-  setStat('Members', '0');
+  // Members = SEAT token holder count. Not derivable from a plain eth_call:
+  // it needs every Transfer event plus a balance check per address, and the
+  // free RPCs cap log ranges (1rpc 50 blocks, drpc 10k, publicnode gated).
+  // Etherscan exposes it only on the Pro tier. Hardcoded until there is an
+  // indexer to read from, so it needs updating when holders change.
+  // Source: etherscan.io/token/0xe2F401A0fb40dA191b9fa8C44Fa09D31cE17374c#balances
+  setStat('Members', '6');
   setStat('Grants', '0');
 
   try {
