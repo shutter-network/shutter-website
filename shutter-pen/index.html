@@ -32,38 +32,49 @@
   @media screen and (max-width:375px) { html { font-size: calc(-0.00267379679144385rem + 4.27807486631016vw); } }
   </style>
   <script>
-  var _paq = window._paq = window._paq || [];
-  _paq.push(['disableCookies']);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
   (function() {
-    var u = 'https://shutter.matomo.cloud/';
-    _paq.push(['setTrackerUrl', u + 'matomo.php']);
-    _paq.push(['setSiteId', '4']);
-    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-    g.async = true; g.src = 'https://cdn.matomo.cloud/shutter.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
-  })();
-  (function() {
-    var CONSENT_KEY = 'sn_analytics_consent';
-    var consent = localStorage.getItem(CONSENT_KEY);
-    if (consent === 'accepted') { _paq.push(['rememberCookieConsentGiven']); }
-    document.addEventListener('DOMContentLoaded', function() {
-      var banner = document.getElementById('sn-consent-banner');
-      var acceptBtn = document.getElementById('sn-consent-accept');
-      var declineBtn = document.getElementById('sn-consent-decline');
-      if (consent === null) { banner.removeAttribute('hidden'); }
-      acceptBtn.addEventListener('click', function() {
-        localStorage.setItem(CONSENT_KEY, 'accepted');
-        banner.setAttribute('hidden', '');
-        _paq.push(['rememberCookieConsentGiven']);
+    // The dev server, local builds and staging all serve this same markup, so
+    // without a host check every page view during development lands in Matomo.
+    // Allowlist the live hostnames rather than blocking localhost, so anything
+    // unrecognised (a preview URL, a LAN IP, file://) fails closed. The consent
+    // banner is skipped too, since there is nothing to consent to when nothing
+    // is tracked.
+    var TRACKED_HOSTS = ['shutter.network', 'www.shutter.network'];
+    if (TRACKED_HOSTS.indexOf(location.hostname) === -1) return;
+
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u = 'https://shutter.matomo.cloud/';
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '4']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = 'https://cdn.matomo.cloud/shutter.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+    (function() {
+      var CONSENT_KEY = 'sn_analytics_consent';
+      var consent = localStorage.getItem(CONSENT_KEY);
+      if (consent === 'accepted') { _paq.push(['rememberCookieConsentGiven']); }
+      document.addEventListener('DOMContentLoaded', function() {
+        var banner = document.getElementById('sn-consent-banner');
+        var acceptBtn = document.getElementById('sn-consent-accept');
+        var declineBtn = document.getElementById('sn-consent-decline');
+        if (consent === null) { banner.removeAttribute('hidden'); }
+        acceptBtn.addEventListener('click', function() {
+          localStorage.setItem(CONSENT_KEY, 'accepted');
+          banner.setAttribute('hidden', '');
+          _paq.push(['rememberCookieConsentGiven']);
+        });
+        declineBtn.addEventListener('click', function() {
+          localStorage.setItem(CONSENT_KEY, 'declined');
+          banner.setAttribute('hidden', '');
+        });
       });
-      declineBtn.addEventListener('click', function() {
-        localStorage.setItem(CONSENT_KEY, 'declined');
-        banner.setAttribute('hidden', '');
-      });
-    });
+    })();
   })();
-  </script>
+</script>
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-tab-rotation-webflow@1.2.2/dist/tab-rotation.js" type="text/javascript" integrity="sha384-NfwimfVJo0ivYDT5XCEV0qOVEOg5WAi1gRKNLKf9B1yMkwajX9dVU7Hjb+V0UFNr" crossorigin="anonymous"></script>
   <style>
   .sn-consent-banner{position:fixed;bottom:0;left:0;right:0;background:#051016;color:#fff;z-index:9999;padding:16px 24px;font-family:'Space Grotesk',sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,0.3);}
