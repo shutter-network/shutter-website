@@ -54,7 +54,8 @@ jobs:
         run: |
           git push origin HEAD:refs/heads/scheduled-release-access-test
           git push origin --delete scheduled-release-access-test
-          gh workflow view deploy.yml > /dev/null
+          # Redeploys the current main (no visible change) to prove the job can start the deploy.
+          gh workflow run deploy.yml --ref main
           echo "Access OK. The merge works and the job can push and start the deploy."
 
       - name: Publish
