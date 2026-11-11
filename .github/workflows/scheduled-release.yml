@@ -1,0 +1,67 @@
+# One-time scheduled release: merges the release branch into main and publishes the site.
+# Runs on 13 November 2026 at 14:00 UTC (15:00 CET). On any other date the schedule does nothing.
+# Can be removed after the release.
+name: Scheduled release
+
+on:
+  schedule:
+    - cron: '0 14 13 11 *'
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'Test only: check access, publish nothing'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency: scheduled-release
+
+env:
+  BRANCH: release/2026-11-13-gnosis-decommission
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Only on 13 November 2026
+        if: github.event_name == 'schedule'
+        run: |
+          if [ "$(date -u +%Y-%m-%d)" != "2026-11-13" ]; then
+            echo "Not the release day, nothing to do."
+            echo "SKIP=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: Merge the release branch
+        if: env.SKIP != '1'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$BRANCH"
+          git merge --no-edit "origin/$BRANCH"
+
+      - name: Test access (no publish)
+        if: env.SKIP != '1' && github.event_name == 'workflow_dispatch' && inputs.test
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git push origin HEAD:refs/heads/scheduled-release-access-test
+          git push origin --delete scheduled-release-access-test
+          gh workflow view deploy.yml > /dev/null
+          echo "Access OK. The merge works and the job can push and start the deploy."
+
+      - name: Publish
+        if: env.SKIP != '1' && !(github.event_name == 'workflow_dispatch' && inputs.test)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git push origin HEAD:main
+          # A push made with the workflow token does not start other workflows, so start the deploy here.
+          gh workflow run deploy.yml --ref main
